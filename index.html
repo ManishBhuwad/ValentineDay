@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="envolope">
+            </div>
+            <div class="back-envo">
+            </div>
+            <div class="left-cross">
+            </div>
+            <div class="right-cross">
+            </div>
+            <div class="card">
+                <div class="innercard">
+                    <h3>Happy</h3>
+                    <h3>Valentine</h3>
+                    <h3>Day!</h3>
+                    <span>💗</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="shadow"></div>
+        
+    </div>
+
+    <script>
+        const card = document.querySelector('.card')
+        const wrapper = document.querySelector(".wrapper")
+        wrapper.addEventListener('mouseenter',()=>{
+            card.classList.add('hoverCard')
+        })
+        wrapper.addEventListener('mouseleave',()=>{
+            card.classList.remove('hoverCard')
+        })
+    </script>
+</body>
+</html>
